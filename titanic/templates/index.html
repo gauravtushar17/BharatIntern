@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: rgb(116, 178, 45);">
+    <center><h1>Survival Prediction</h1>
+        <p>(Pclass:0-S,1-C,2-Q)</p>
+        <p>(Sex:Male-0,Female-1)</p>
+        <p>(Age:0-80)</p>
+        <p>(Fare:0-512)</p>
+        <br>
+
+    <form action = '\predict' method="POST">
+    <b><b>Pclass:  <input type="text", name='Pclass'> <br><br>
+        Sex:  <input type="text", name='Sex'> <br><br>
+        Age:  <input type="text", name='Age'> <br><br>
+        Fare: <input type="text", name='Fare'> <br><br><br></b>
+        <input type="submit" , value='predict' ></b>
+
+    
+
+        <br>      
+              <br><b><img src="{{url_for('static', filename='titanic.jpg')}}" alt='Titanic' width = 500/></b><br>
+        <br>
+
+    </form>
+    </center>
+</body>
+</html>

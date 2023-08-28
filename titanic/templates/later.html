@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Prediction Result</h1><br>
+
+        {% if data == 0 %}
+        <h1>DIED</h1>  
+        {% else %}
+        <h1>SURVIVED</h1>
+        {% endif %}
+
+        <br><br>
+        <b><img src="{{url_for('static', filename='titanic.jpg')}}" alt='Titanic' width = 500/></b>
+        <br><br>
+        <a href='/'>go back to home page</a>
+    </center>
+</body>
